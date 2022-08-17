@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Workspace/Test/mlops-dvc-test/mlruns/0/da2ff80af43e4522833a4126716b7204/artifacts
+end_time: 1660208197458
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: da2ff80af43e4522833a4126716b7204
+run_uuid: da2ff80af43e4522833a4126716b7204
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1660208194611
+status: 3
+tags: []
+user_id: A11210721050486
