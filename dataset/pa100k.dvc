@@ -1,0 +1,5 @@
+outs:
+- md5: 4074f171ec7b5352fd311b67e0d94561.dir
+  size: 1057507
+  nfiles: 202
+  path: pa100k
