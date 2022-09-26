@@ -22,11 +22,17 @@ sys.path.append(os.path.abspath(os.path.join(__dir__, '../')))
 
 from ppcls.utils import config
 from ppcls.engine.engine import Engine
+import mlflow
+import mlflow.sklearn
 
 if __name__ == "__main__":
-    print("sss")
+
     args = config.parse_args()
     print(args)
+    mlflow.set_tracking_uri("http://10.10.10.185:8889")
+    mlflow.set_experiment("cloudlab-paddle-test")
+    mlflow.log_param("param1", 111)
+    mlflow.log_metric("metric", 222)
     config = config.get_config(
         args.config, overrides=args.override, show=False)
     config.profiler_options = args.profiler_options

@@ -31,7 +31,8 @@ def eval_metrics(actual, pred):
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-
+    mlflow.set_tracking_uri("http://52.83.31.223:8889")
+    mlflow.set_experiment("/my-experiment")
     # Read the wine-quality csv file from the URL
     csv_url = (
         "http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
